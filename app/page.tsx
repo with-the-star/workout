@@ -17,13 +17,13 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-between w-full">
-        <div className="max-w-2xl border-solid border-b-2 sm:border-b-4 border-b-[#a2bdd0] border-r-2 sm:border-r-4 border-r-[#e30c09] w-2/12">
+        <div className="max-w-2xl border-solid border-b-2 sm:border-b-4 border-b-[#a2bdd0] border-r-2 sm:border-r-4 border-r-[#e30c09] w-2/12 flex justify-center">
           <Image
             src="/new-animated.gif"
             alt="logo"
             width={200}
             height={200}
-            className="w-full"
+            className=""
           />
         </div>
         <div className="flex justify-between items-center whitespace-nowrap text-[35px] sm:text-[40px] md:text-[60px] lg:text-[75px] xl:text-[90px] border-b-2 sm:border-b-4 border-b-[#a2bdd0] w-10/12 pl-3">
