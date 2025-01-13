@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.paper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.paper::before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    height: 100%;
+    width: 2px;
+    background: #e30c09;
+}
+
+.text {
+    position: absolute;
+    top: 45px;
+    left: 65px;
+    bottom: 10px;
+    right: 10px;
+    font-size: 35px;
+    line-height: 62px;
+    font-family: 'Indie Flower';
+    overflow: hidden;
+    outline: none;
+}
+
+.holes {
+    position: absolute;
+    width: 60px;
+}
+
+.hole-top {
+    top: 90px;
+}
+
+@media (min-width: 768px) {
+    .paper::before {
+        left: 85px;
+    }
+    .text {
+        left: 90px;
+        top: 70px;
+        font-size: 60px;
+        line-height: 85px;
+    }
+    .holes {
+        position: absolute;
+        width: 85px;
+    }
+    .hole-top {
+        top: 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .paper::before {
+        left: 120px;
+    }
+    .text {
+        left: 125px;
+        top: 75px;
+        font-size: 80px;
+        line-height: 105px;
+    }
+    .holes {
+        position: absolute;
+        width: 120px;
+    }
+    .hole-top {
+        top: 150px;
+    }
+}
