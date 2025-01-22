@@ -20,7 +20,8 @@ export default function Home() {
   };
 
   return (
-    <div className='overflow-hidden w-full h-screen flex flex-col gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
+    <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
+      <link rel="preload" href="/3D_Notebook3.png" as="image" />
       <div className='flex flex-row  max-w-lg md:max-w-2xl lg:max-w-3xl justify-between xl:gap-[200px]'>
         <Link href="/">
           <IconLogo className="h-[40px] md:h-[60px] lg:h-[120px]" />
@@ -47,13 +48,14 @@ export default function Home() {
               />
             </div>
             <br />
-            <a href='https://workoutfoods.com/' className='underline text-red-500'>Click here to visit our store.</a><br />
+            <Link href='/' className='underline text-red-500'>Click here to visit our store.</Link><br />
             Thank you!
           </div>
         </div>
       </div>
-      <div className='w-full max-w-5xl flex justify-end font-semibold font-inkfree bottom-0 relative -rotate-[4deg] ml-[8vw] lg:ml-[160px]'>
+      <div className='w-full max-w-5xl flex justify-end font-semibold font-inkfree bottom-0 relative -rotate-[4deg] ml-0 lg:ml-[160px]'>
         <Image
+          priority
           src="/3D_Notebook3.png"
           alt="book"
           width={1000}
@@ -72,6 +74,6 @@ export default function Home() {
           <p className='flex gap-8'><Fifth className='w-[60px] sm:w-[100px] md:w-[140px] lg:w-[160px]' /><span>70s × 10</span></p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
