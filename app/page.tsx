@@ -1,8 +1,10 @@
 "use client"
-import React from 'react';
-import IconLogo from '@/components/icons/IconLogo';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+
+import Loading from '@/components/loading';
+import IconLogo from '@/components/icons/IconLogo';
 import First from '@/components/icons/lines/First';
 import Second from '@/components/icons/lines/Second';
 import Third from '@/components/icons/lines/Third';
@@ -10,6 +12,7 @@ import Fourth from '@/components/icons/lines/Fourth';
 import Fifth from '@/components/icons/lines/Fifth';
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
   const getFormattedDate = (): string => {
     const today = new Date();
     const month = today.getMonth() + 1;
@@ -18,6 +21,19 @@ export default function Home() {
 
     return `${month}-${day}-${year}`;
   };
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
