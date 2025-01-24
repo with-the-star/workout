@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[180px] md:gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
+    <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[80px] md:gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
       <link rel="preload" href="/3D_Notebook3.png" as="image" />
       <div className='flex flex-row  max-w-lg md:max-w-2xl lg:max-w-3xl justify-between xl:gap-[200px]'>
         <Link href="/">
