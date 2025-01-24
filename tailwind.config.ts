@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        inkfree: ['Ink Free', 'Arial', 'sans-serif'],
+        inkfree: ['Ink Free', 'cursive'],
       },
     },
   },

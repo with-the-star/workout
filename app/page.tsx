@@ -36,7 +36,7 @@ export default function Home() {
   // }
 
   return (
-    <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
+    <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[180px] md:gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
       <link rel="preload" href="/3D_Notebook3.png" as="image" />
       <div className='flex flex-row  max-w-lg md:max-w-2xl lg:max-w-3xl justify-between xl:gap-[200px]'>
         <Link href="/">
@@ -44,25 +44,14 @@ export default function Home() {
         </Link>
         <div className='flex flex-col gap-[2px] text-[12px] md:text-[15px] lg:text-[18px] -mt-[8px]'>
           <h3 className='font-bold text-[20px] md:text-[22px] lg:text-[25px]'>Welcome to Workout</h3>
-          <div>
+          <div className='leading-[31.5px]'>
             We are a small company that<br />
             makes high-quality organic<br />
             foods and supplements with<br />
             the utmost of care. We think<br />
             that what you put in your body<br />
             is just as important as how<br />
-            <div className='flex gap-2'>
-              <span>
-                hard you work it out.
-              </span>
-              <Image
-                src="/blue-dumbbell-icon.png"
-                alt="book"
-                width={1000}
-                height={1000}
-                className="w-[32px]"
-              />
-            </div>
+            hard you work it out.
             <br />
             <Link href='/' className='underline text-red-500'>Click here to visit our store.</Link><br />
             Thank you!
