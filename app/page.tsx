@@ -24,7 +24,7 @@ export default function Home() {
     <Link href='https://workoutfoods.com/' className='overflow-hidden w-full h-screen flex flex-col gap-[80px] md:gap-[50px] justify-between px-[25px] pt-[50px] md:px-[80px] md:pt-[30px] lg:px-[150px] lg:pt-[100px] xl:items-center'>
       <link rel="preload" href="/3D_Notebook3.png" as="image" />
       <div className='flex flex-row  max-w-lg md:max-w-2xl lg:max-w-3xl justify-between xl:gap-[200px]'>
-        <Link href="/">
+        <Link href="https://workoutfoods.com/">
           <IconLogo className="h-[40px] md:h-[60px] lg:h-[120px]" />
         </Link>
         <div className='flex flex-col gap-[2px] text-[12px] md:text-[15px] lg:text-[18px] -mt-[8px]'>
@@ -38,7 +38,7 @@ export default function Home() {
             is just as important as how<br />
             hard you work it out.
             <br />
-            <Link href='/' className='underline text-red-500'>Click here to visit our store.</Link><br />
+            <Link href='https://workoutfoods.com/' className='underline text-red-500'>Click here to visit our store.</Link><br />
             Thank you!
           </div>
         </div>
